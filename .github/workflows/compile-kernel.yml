@@ -81,7 +81,8 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -laaros
+          - -m8s_pro_w-wifi_mod
 
 env:
   TZ: Etc/UTC
