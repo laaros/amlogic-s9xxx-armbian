@@ -86,7 +86,7 @@ index 111111111111..222222222222 100644
  # Makefile for the Linux Wireless network device drivers.
  #
  
-+obj-$(CONFIG_SSV6051) += ssv6051/
++obj-m += ssv6051/
  obj-$(CONFIG_WLAN_VENDOR_ADMTEK) += admtek/
  obj-$(CONFIG_WLAN_VENDOR_ATH) += ath/
  obj-$(CONFIG_WLAN_VENDOR_ATMEL) += atmel/
@@ -100,7 +100,7 @@ index 000000000000..111111111111
 +config SSV6051
 +        tristate "South Silicon Valley (ssv) 6051 family WLAN support"
 +	depends on MAC80211
-+	depends on (MMC = y)
++	depends on MMC = y
 +        default n
 +	select FW_LOADER
 +        help
@@ -123,7 +123,7 @@ index 000000000000..111111111111
 +
 +ccflags-y += -DSDIO_USE_SLOW_CLOCK
 +
-+obj-$(CONFIG_SSV6051) += ssv6051.o
++obj-m += ssv6051.o
 +ssv6051-objs += \
 +	ssv6051-generic-wlan.o \
 +	ssvdevice/ssvdevice.o \
