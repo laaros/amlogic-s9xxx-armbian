@@ -82,7 +82,7 @@ on:
         options:
           - -ophub
           - -laaros
-          - -m8s_pro_w-wifi_mod
+          - -m8s-pro-w-wifi-mod
 
 env:
   TZ: Etc/UTC
