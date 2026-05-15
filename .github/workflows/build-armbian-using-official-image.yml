@@ -286,7 +286,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - laaros
 
 env:
   TZ: Etc/UTC
