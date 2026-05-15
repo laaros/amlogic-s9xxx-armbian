@@ -146,8 +146,10 @@ jobs:
           build_target: armbian
           armbian_path: build/output/images/*.img.gz
           armbian_board: ${{ inputs.armbian_board }}
-          armbian_kernel: "6.18.21" # Wymuszamy Twoją wersję
-          auto_kernel: false # Wyłączamy pobieranie z repo ophub, bo mamy własny w folderze kernel/
+          armbian_kernel: "6.18.21"           # To musi pasować do nazwy pliku 6.18.21.tar.gz
+          auto_kernel: false 
+          kernel_repo: "laaros/amlogic-s9xxx-armbian" # Twoje repo
+          kernel_usage: "stable"              # To doda przedrostek 'kernel_' do taga, szukając 'kernel_stable'
           armbian_fstype: "ext4"
           builder_name: "laar"
 
